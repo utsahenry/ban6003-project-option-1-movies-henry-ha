@@ -7,3 +7,6 @@ nbconvert
 ipykernel
 python-dotenv
 setuptools<81
+sqlalchemy
+psycopg2-binary
+psycopg[binary]
