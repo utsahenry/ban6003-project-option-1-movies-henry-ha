@@ -17,18 +17,18 @@ production_companies,object,Production companies.,movies_metadata.csv,Retained f
 production_countries,object,Production countries.,movies_metadata.csv,Retained from source data.,
 adult,bool,Adult.,movies_metadata.csv,Retained from source data.,
 status,object,Status.,movies_metadata.csv,Retained from source data.,
-genres_list,object,Pipe-delimited genres.,movies_metadata.csv,Derived from the movie genre field.,Parsed from genres.
-primary_genre,object,First listed genre.,movies_metadata.csv,Derived from the movie genre field.,"Simple convention, not a ranking."
+genres_list,object,Pipe-delimited genres.,movies_metadata.csv,Retained from source data.,Parsed from genres.
+primary_genre,object,First listed genre.,movies_metadata.csv,Retained from source data.,"Simple convention, not a ranking."
 release_year,int64,Release year.,movies_metadata.csv,Retained from source data.,
-user_rating_mean,float64,Mean rating by movieId.,ratings.csv,Aggregated by movieId.,Observed post-release ratings.
-user_rating_count,float64,Rating-event count by movieId.,ratings.csv,Aggregated by movieId.,Defines target eligibility.
-distinct_user_count,float64,Distinct users by movieId.,ratings.csv,Aggregated by movieId.,Aggregated from ratings.
-user_rating_std,float64,Rating standard deviation by movieId.,ratings.csv,Aggregated by movieId.,May be missing for sparse ratings.
-first_rating_date,datetime64[ns],First rating date by movieId.,ratings.csv,Aggregated by movieId.,Post-release information.
-last_rating_date,datetime64[ns],Last rating date by movieId.,ratings.csv,Aggregated by movieId.,Post-release information.
-director,object,Curated director.,credits_curated.csv,Left-joined on tmdbId.,Left-joined on tmdbId; may be missing.
-top_cast,object,Pipe-delimited top cast.,credits_curated.csv,Left-joined on tmdbId.,Left-joined on tmdbId; may be missing.
-keywords_list,object,Pipe-delimited keywords.,keywords_curated.csv,Left-joined on tmdbId.,Left-joined on tmdbId; may be missing.
-revenue_observed,Int64,Revenue availability flag.,movies_metadata.csv,Derived from cleaned ABT fields.,1 when cleaned revenue is present.
-rating_target_eligible,bool,At least 20 ratings flag.,ratings.csv,Derived from cleaned ABT fields.,Defines valid target rows.
-high_user_rating,Int64,Mean rating >= 3.75 flag.,ratings.csv,Derived from cleaned ABT fields.,Missing when fewer than 20 ratings are observed.
+user_rating_mean,float64,Mean rating by movieId.,ratings.csv,Retained from source data.,Observed post-release ratings.
+user_rating_count,float64,Rating-event count by movieId.,ratings.csv,Retained from source data.,Defines target eligibility.
+distinct_user_count,float64,Distinct users by movieId.,ratings.csv,Retained from source data.,Aggregated from ratings.
+user_rating_std,float64,Rating standard deviation by movieId.,ratings.csv,Retained from source data.,May be missing for sparse ratings.
+first_rating_date,datetime64[ns],First rating date by movieId.,ratings.csv,Retained from source data.,Post-release information.
+last_rating_date,datetime64[ns],Last rating date by movieId.,ratings.csv,Retained from source data.,Post-release information.
+director,object,Curated director.,credits_curated.csv,Retained from source data.,Left-joined on tmdbId; may be missing.
+top_cast,object,Pipe-delimited top cast.,credits_curated.csv,Retained from source data.,Left-joined on tmdbId; may be missing.
+keywords_list,object,Pipe-delimited keywords.,keywords_curated.csv,Retained from source data.,Left-joined on tmdbId; may be missing.
+revenue_observed,Int64,Revenue availability flag.,movies_metadata.csv,Retained from source data.,1 when cleaned revenue is present.
+rating_target_eligible,bool,At least 20 ratings flag.,ratings.csv,Retained from source data.,Defines valid target rows.
+high_user_rating,Int64,Mean rating >= 3.75 flag.,ratings.csv,Retained from source data.,Missing when fewer than 20 ratings are observed.
